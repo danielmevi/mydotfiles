@@ -1,0 +1,37 @@
+[init]
+    templatedir=hooksPath
+[alias]
+	ci = commit
+	co = checkout
+	lchanges = "!csh -c 'git fetch $1 ; if($#argv>0) shift; git log FETCH_HEAD..HEAD $*'"
+	ldiffchanges = "!csh -c 'git fetch $1 ; if($#argv>0) shift; git diff FETCH_HEAD..HEAD $*'"
+	lfchanges = "!csh -c 'git fetch $1 ; if($#argv>0) shift; git log --pretty=\"format:\" --name-only FETCH_HEAD..HEAD $* | sort | uniq'"
+	parent = remote show origin
+	rchanges = "!csh -c 'git fetch $1 ; if($#argv>0) shift; git log HEAD..FETCH_HEAD $*'"
+	rdiffchanges = "!csh -c 'git fetch $1 ; if($#argv>0) shift; git diff HEAD..FETCH_HEAD $*'"
+	rfchanges = "!csh -c 'git fetch $1 ; if($#argv>0) shift; git log --pretty=\"format:\" --name-only HEAD..FETCH_HEAD $* | sort | uniq'"
+	root = rev-parse --show-toplevel
+	st = status
+[color]
+	ui = auto
+[core]
+	pager = less -FRSX
+	preloadindex = true
+[diff]
+	mnemonicprefix = true
+	renames = true
+[log]
+	decorate = true
+[merge]
+	conflictstyle = diff3
+[pack]
+	threads = 0
+[push]
+	default = tracking
+[user]
+	email = daniel.mevi@gmail.com
+	name = danielmevi
+[clangFormat]
+	binary = /usr/pkgs/clang/3.9.0/bin/clang-format
+	extension = /nfs/site/home/dmedin2/git-clang-format
+	style = file

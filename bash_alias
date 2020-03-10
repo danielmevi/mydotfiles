@@ -1,0 +1,48 @@
+# Commands'
+alias vim='nvim'
+alias ll='ls -p'
+alias l='ls -lhrp'
+alias cl='clear'
+alias h='history'
+alias grep='grep -nP'
+alias calias='cat $HOME/.aliases'
+alias whoNFS='lsof '
+alias pd='pushd'
+alias bd='popd'
+
+alias n='nfasd -e nvim'
+alias ny='nfasd -e nyaovim'
+
+# Repositories
+alias clonePlatform='git clone git@gitlab.jlrint.com:eva3/platform.git'
+alias cloneDocket='git clone git@gitlab.jlrint.com:prm-embedded/dockerbuilder.git'
+alias cloneSeats='git clone git@gitlab.jlrint.com:eva3/models/seats.git'
+alias cloneRio='git clone git@gitlab.jlrint.com:eva3/rio.git'
+
+# Places
+alias cdGitHub='cd /home/daniel/Windows/Documents/GitHub'
+alias cdWindowsEVA3='cd /home/daniel/Windows/Documents/EVA3'
+alias cdEVA3='cd /home/daniel/EVA3'
+
+# CC'
+#alias g++9.1 /usr/pkgs/gcc/9.1.0/bin/g++'
+#alias g++8.1 /usr/pkgs/gcc/8.1.0/bin/g++'
+#alias g++7.2 /usr/pkgs/gcc/7.2.0/bin/g++'
+#alias g++6.1 /usr/pkgs/gcc/6.1.0/bin/g++'
+#alias g++5.3 /usr/pkgs/gcc/5.3.0/bin/g++'
+#alias g++4.8.1 /usr/pkgs/gcc/4.8.1/bin/g++'
+#alias g++4.9 /usr/pkgs/gcc/4.9.3/bin/g++'
+#alias g++4.5 /usr/pkgs/gcc/4.5.0a/bin/g++'
+#alias g++4.3.2 /usr/pkgs/gcc/4.3.2/bin/g++'
+#alias g++4.7.2 /usr/pkgs/gcc/4.7.2/bin/g++'
+
+# Green Hills
+alias ghs_multi='sudo /usr/ghs/multi_716/multi'
+alias ghs_cxppc='sudo /usr/ghs/comp_201954/cxppc'
+alias ghs_ccppc='sudo /usr/ghs/comp_201954/ccppc'
+
+# clang'
+#alias clang /usr/pkgs/clang/3.9.0/bin/clang'
+#alias format /usr/pkgs/clang/3.9.0/bin/clang-format'
+alias git-clang-format=' $HOME/git-clang-format'
+alias git-format-repo='git-clang-format --commit `git hash-object -t tree /dev/null`'
